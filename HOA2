@@ -1,0 +1,34 @@
+# CODES USED FOR HOA2 #
+
+ssh-keygen
+ssh-keygen -t rsa -b 4096
+
+ls -la .ssh
+
+ssh-copy-id -i ~/.ssh/id_rsa jonjeous@localmachine
+ssh-copy-id -i ~/.ssh/id_rsa jonjeous@server1
+ssh-copy-id -i ~/.ssh/id_rsa jonjeous@server2
+
+ssh jonjeous@server1
+ssh jonjeous@server2
+
+
+which git
+sudo apt install git -y
+which git
+git --version
+
+cat .ssh/id_rsa.pub
+
+git@github.com:jonjeous/Recto_HOA2
+ls
+
+git config --global user.name "Jon Jeous"
+git config -- global user.email qjjjrecto@tip.edu.ph
+
+sudo nano README.md
+
+git status
+git add .
+git commit -m "HOA 2"
+git push origin main
